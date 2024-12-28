@@ -1,6 +1,6 @@
 "use server";
 
-import {signIn, signOut} from "@/auth"
+import {signIn, signOut} from "@/lib/auth"
 import { revalidatePath } from "next/cache"
 
 export const login = async (provider: string) => {
